@@ -1,9 +1,27 @@
 ---
-// import astroLogo from "../assets/astro.svg";
-// import background from "../assets/background.svg";
+import Logo from "../assets/logo.svg";
 ---
 
 <div class='container text-center'>
   <!-- <img id='background' src={background.src} alt='' fetchpriority='high' /> -->
-  <footer>&copy; KidsBind 2025</footer>
+  <footer>
+    &copy; KidsBind 2025.
+    <br />
+    <a
+      href='https://jasonleewilson.com/'
+      target='_blank'
+      aria-lable='goto jasonleewilson.com'
+      >Built with love by: jasonleewilson.com</a
+    >
+
+    <a href='https://jasonleewilson.com/'
+      ><img
+        src={Logo.src}
+        width='115'
+        height='24'
+        class='inline-block w-6'
+        alt='Jason Lee Wilson homepage'
+      /></a
+    >
+  </footer>
 </div>

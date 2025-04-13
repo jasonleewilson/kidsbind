@@ -17,8 +17,8 @@ export function Databind(props) {
         placeholder='Enter ABCs'
         maxLength='26'
       />
-      <p className='uppercase text-9xl wrap-break-word pb-4'>{inputValue}</p>
-      <p className='lowercase text-9xl wrap-break-word pb-4'>{inputValue}</p>
+      <p className='uppercase text-7xl wrap-break-word pb-4'>{inputValue}</p>
+      <p className='lowercase text-7xl wrap-break-word pb-4'>{inputValue}</p>
     </div>
   );
 }
