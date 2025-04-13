@@ -1,23 +1,24 @@
 ---
 // import astroLogo from "../assets/astro.svg";
 // import background from "../assets/background.svg";
+import { Databind } from "../components/Databind";
 ---
 
 <div id='container'>
   <!-- <img id='background' src={background.src} alt='' fetchpriority='high' /> -->
   <main>
-    <section
-      class='container mx-auto h-full w-screen justify-center items-center bg-amber-200'
-    >
-      <h1 class='text-3xl font-bold underline text-purple-500'>ABOUT</h1>
-      <h2 class='text-9xl font-thin'>
-        <span class='font-extralight'>POP</span>PINS
-      </h2>
+    <section class='container mx-auto w-auto p-4 items-center bg-gray-300'>
+      <!-- <h1 class='text-3xl font-bold underline text-purple-500'>ABOUT</h1> -->
+      <h1 class='text-4xl md:text-9xl font-thin'>
+        <span class='font-extralight'>Kids</span>Bind
+      </h1>
       <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae
-        cupiditate iste nulla, eos nihil optio eaque culpa porro dolorem
-        voluptate. Labore ullam fuga quia, minima nam sed qui veniam molestiae!
+        Kids can practice ABC's. The input text will bind the text to display
+        larger text for kids learning.
       </p>
+    </section>
+    <section class='container mx-auto font-extrabold text-green-500'>
+      <Databind client:load />
     </section>
   </main>
 </div>
