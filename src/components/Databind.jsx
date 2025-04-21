@@ -8,17 +8,25 @@ export function Databind(props) {
   };
 
   return (
-    <div className='w-auto'>
-      <input
-        className='m-4 p-4 text-2xl text-black focus:border-green-500 focus:outline focus:outline-green-500'
-        type='text'
-        value={inputValue}
-        onChange={handleInputChange}
-        placeholder='Enter ABCs'
-        maxLength='26'
-      />
-      <p className='uppercase text-7xl wrap-break-word pb-4'>{inputValue}</p>
-      <p className='lowercase text-7xl wrap-break-word pb-4'>{inputValue}</p>
+    <div className='grow content-center'>
+      <div className='h-1/2 upper py-16'>
+        <p className='uppercase text-7xl text-red-500 wrap-break-word text-wrap pb-4 text-center overflow-auto'>
+          {inputValue}
+        </p>
+      </div>
+
+      <div className='h-1/2 w-fit mx-auto lower'>
+        <label htmlFor='enter-text' className='sr-only'></label>
+        <input
+          className='mx-auto text-center m-4 p-4 text-lg md:text-2xl text-black border-1 outline-black focus:border-black focus:outline focus:outline-black overflow-hidden'
+          type='text'
+          value={inputValue}
+          onChange={handleInputChange}
+          placeholder='Enter ABCs or 123s'
+          // maxLength='26'
+          // autofocus
+        />
+      </div>
     </div>
   );
 }

@@ -1,0 +1,23 @@
+---
+// import AudioPlayer from "../components/AudioPlayer";
+import AudioPlayerWithVisualizer from "../components/AudioPlayerWithVisualizer";
+import Layout from "../layouts/Layout_blank.astro";
+// import myAudio1 from "../assets/audio/sr1_techass_1.mp3";
+// import myAudio2 from "../assets/audio/sr1_techass_2.mp3";
+
+import track1 from "../assets/audio/sr1_techass_1.mp3";
+import track2 from "../assets/audio/sr1_techass_2.mp3";
+// import track3 from '../assets/audio/sr1_techass_1.mp3';
+
+const playlist = [
+  { name: "SR1 TECHASS TRX01", src: track1 },
+  { name: "SR1 TECHASS TRX02", src: track2 },
+  // { name: "Synthwave Dreams", src: track3 },
+];
+---
+
+<Layout>
+  <!-- <AudioPlayer src={myAudio} client:load /> -->
+  <AudioPlayerWithVisualizer playlist={playlist} client:load />
+  <!-- <AudioPlayerWithVisualizer src={myAudio2} client:load /> -->
+</Layout>

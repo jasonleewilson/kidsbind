@@ -1,10 +1,10 @@
 ---
-import Logo from "../assets/logo.svg";
+// import Logo from "../assets/logo.svg";
 import background from "../assets/background.svg";
 import { Databind } from "../components/Databind";
 ---
 
-<div id='container'>
+<div class='grow'>
   <img
     id='background'
     src={background.src}
@@ -12,16 +12,17 @@ import { Databind } from "../components/Databind";
     fetchpriority='high'
   />
   <main>
-    <section class='container mx-auto w-auto p-4 items-center bg-gray-300'>
+    <section class='container mx-auto p-8 w-auto items-center bg-gray-300'>
       <h1 class='text-4xl md:text-9xl font-thin'>
+        <span class='text-sm'>welcome to</span><br />
         <span class='font-extralight'>Kids</span>Bind
       </h1>
       <p>
-        Kids can practice ABC's. The input text will bind the text to display
-        larger text for kids learning.
+        Kids can practice ABC's or 123's. The input text will bind the text to
+        display larger text for kids learning.
       </p>
     </section>
-    <section class='container mx-auto font-extrabold text-green-500'>
+    <section class='container mx-auto p-8 font-extrabold bg-gray-300'>
       <Databind client:load />
     </section>
   </main>
