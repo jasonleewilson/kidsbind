@@ -25,6 +25,7 @@
 	},
 	"devDependencies": {
 		"@cloudflare/workers-types": "^4.20250412.0",
+		"@vitejs/plugin-basic-ssl": "^2.0.0",
 		"wrangler": "^4.10.0"
 	}
 }
