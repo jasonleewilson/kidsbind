@@ -1,3 +1,4 @@
+
 User-agent: *
 Disallow: 
 Sitemap: https://kidsbind.pages.dev/sitemap.xml
