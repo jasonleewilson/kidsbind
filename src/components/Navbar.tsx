@@ -9,8 +9,8 @@ const Navbar: React.FC = () => {
   };
 
   return (
-    <nav className='bg-gray-100'>
-      <div className='lg:max-w-7xl mx-auto px-4'>
+    <nav>
+      <div className='container mx-auto px-4'>
         <div className='flex justify-between'>
           {/* Left side: Logo + Nav */}
           <div className='flex space-x-4'>

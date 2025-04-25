@@ -1,18 +1,18 @@
 ---
 // import Logo from "../assets/logo.svg";
-import background from "../assets/background.svg";
+// import background from "../assets/background.svg";
 import { Databind } from "../components/Databind";
 ---
 
 <div class='grow'>
-  <img
+  <!-- <img
     id='background'
     src={background.src}
     alt='background image'
     fetchpriority='high'
-  />
+  /> -->
   <main>
-    <section class='container mx-auto p-8 w-auto items-center bg-gray-300'>
+    <section class='container mx-auto p-8 w-auto items-center'>
       <h1 class='text-4xl md:text-9xl font-thin'>
         <span class='text-sm'>welcome to</span><br />
         <span class='font-extralight'>Kids</span>Bind
@@ -22,7 +22,7 @@ import { Databind } from "../components/Databind";
         display larger text for kids learning.
       </p>
     </section>
-    <section class='container mx-auto p-8 font-extrabold bg-gray-300'>
+    <section class='container mx-auto p-8 font-extrabold'>
       <Databind client:load />
     </section>
   </main>

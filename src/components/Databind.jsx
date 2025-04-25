@@ -16,16 +16,24 @@ export function Databind(props) {
       </div>
 
       <div className='h-1/2 w-fit mx-auto lower'>
-        <label htmlFor='enter-text' className='sr-only'></label>
-        <input
-          className='mx-auto text-center m-4 p-4 text-lg md:text-2xl text-black border-1 outline-black focus:border-black focus:outline focus:outline-black overflow-hidden'
-          type='text'
-          value={inputValue}
-          onChange={handleInputChange}
-          placeholder='Enter ABCs or 123s'
-          // maxLength='26'
-          // autofocus
-        />
+        <form onReset={() => setInputValue("")}>
+          <label htmlFor='enter-text' className='sr-only'></label>
+          <input
+            className='mx-auto text-center m-4 p-4 text-lg md:text-2xl text-black border-1 outline-black focus:border-black focus:outline focus:outline-black overflow-hidden'
+            type='text'
+            value={inputValue}
+            onChange={handleInputChange}
+            placeholder='Enter ABCs or 123s here'
+            // maxLength='26'
+            // autofocus
+          />
+          <br />
+          <input
+            type='reset'
+            value='Reset'
+            className='p-2 px-4 w-full mx-auto bg-gray-300 text-black border border-black rounded hover:bg-gray-400 cursor-pointer'
+          />
+        </form>
       </div>
     </div>
   );
