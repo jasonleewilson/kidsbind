@@ -1,1 +1,14 @@
 @import "tailwindcss";
+
+.btn {
+    @apply py-2 px-8 bg-yellow-400 hover:bg-yellow-300 text-yellow-900 hover:text-yellow-800 rounded shadow transition duration-300;
+}
+
+p {
+    @apply mb-4
+}
+
+.text-output {
+    @apply leading-[90px] uppercase text-red-500 wrap-break-word text-wrap pb-4 text-center overflow-auto;
+    font-size: 7rem;
+}
